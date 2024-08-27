@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,198 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+
     <!-- Instação do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6h+ALEwIH" crossorigin="anonymous">
+
+    <!-- Instalação do SwiperJs-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Referência ao arquivo .css -->
     <link href="./output.css" rel="stylesheet">
 
+    <style>
+        #home {
+            background-image: radial-gradient(closest-side, #1f236f, #00022b);
+        }
+    </style>
     <title>O Novo Mercado</title>
 </head>
-<body>
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<body class="font-roboto">
+    <header class="bg-primary-1">
+
+        <nav class="flex items-center justify-between max-w-[1080px] mx-auto py-4">
+            <a href="#"><img width="100px" src="assets/img/logo-onm-pw.svg" alt=""></a>
+
+            <a class="flex items-center justify-center text-sm text-white font-bold bg-secondary-1 py-2 px-6 rounded-full hover:shadow-hover-btn hover:outline-double hover:outline-2 hover:outline-rose-500"
+                href="#">Comece agora</a>
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <section id="home" class="">
+            <div id="hero" class="flex gap-2 max-w-[1200px] pt-5 mx-auto">
+                <div class="flex flex-col gap-4">
+                    <p class="text-white font-bold text-[32px]">Matricule-se na maior escola de marketing digital e
+                        negócios do Brasil e junte-se aos profissionais mais capacitados do mercado.</p>
+
+                    <p class="text-primary-3 text-lg w-[80%]">Comece hoje a construir a vida que você sempre sonhou.
+                        Desenvolva as habilidades necessárias para ter sucesso no mercado digital. O negócio ideal
+                        existe, e ele pode ser o seu.</p>
+
+                    <a class="bg-secondary-1 flex items-center justify-center w-[300px] text-2xl py-3 text-white font-bold rounded-full hover:shadow-hover-btn hover:outline-double hover:outline-2 hover:outline-rose-500"
+                        href="#">Comece agora</a>
+                </div>
+                <div class="">
+                    <iframe class="rounded-lg overflow-hidden" width="680" height="400"
+                        src="https://www.youtube.com/embed/xoyTw2l50wI?si=mGyH-9UOwiuIBkSp" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div id="testimonials" class="flex px-36 py-24 gap-20 text-white font-bold">
+                <div id="testimonial-1" class="flex flex-col gap-4">
+                    <p>Eu já aprendi bastante coisa. Tenho dois empregos e filhos mas, mesmo assim, me reorganizei e fiz
+                        um primeiro lançamento. Sair da inércia fez diferença. Saber mais sobre tipos de infoprodutos,
+                        modelos de lançamento, perfil de demanda, etc. Tudo tem ajudado muito nesse processo de
+                        reinvenção minha. Valeu!</p>
+
+                    <div class="flex items-center gap-3">
+                        <img class="rounded-[50%]" src="assets/img/pessoa-felipe.jpg" alt="">
+                        <p>Felipe Freitas</p>
+                    </div>
+                </div>
+
+                <div id="testimonial-2" class="flex flex-col gap-4">
+                    <p>Entrei no ONM com o objetivo de aumentar a cartela de clientes (sou Advogada). Melhorei minha
+                        comunicação; melhorei como filha, irmã e esposa e como profissional; virei autoridade; sou
+                        procurada por outros advogados para dar mentoria e hoje faturo 3x mais do que antes. Não é só
+                        sobre marketing!</p>
+
+                    <div class="flex items-center gap-3">
+                        <img class="rounded-[50%]" src="assets/img/pessoa-barbara.jpg" alt="">
+                        <p>Barbara Reis</p>
+                    </div>
+                </div>
+
+                <div id="testimonial-3" class="flex flex-col gap-4">
+                    <p>Sou Personal Trainer e quando assinei o ONM já tinha um faturamento legal, mas com o excesso de
+                        informação sobre marketing digital não fazia nada direito. Decidi seguir apenas os conteúdos do
+                        ONM e de lá pra cá faturei mais de 500 mil. Nada me motiva mais do que a famosa frase do Ícaro:
+                        “me deem 10 anos”.</p>
+
+                    <div class="flex items-center gap-3">
+                        <img class="rounded-[50%]" src="assets/img/pessoa-thais.jpg" alt="">
+                        <p>Thais de Araújo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teachers" class="pb-20">
+            <div class="flex flex-col gap-4 pt-14 pb-10 text-center">
+                <h2 class="text-secondary-1 font-bold text-6xl">Seus professores especialistas.</h2>
+                <p class="text-gray-2 font-medium text-2xl w-[40%] mx-auto">Tenha acesso ao cérebro dos melhores e
+                    aprenda com as maiores referências do mercado digital.</p>
+            </div>
+
+            <div class="ml-4">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper text-white text-2xl font-bold">
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-01-icaro.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Ícaro de Carvalho</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-02-leandro.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Leandro Ladeira</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-03-bettina.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Bettina Rudolph</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-04-pedro.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Pedro Sobral</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-05-sabrina.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Sabrina Nunes</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-06-oney.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Oney Araújo</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-07-eslen.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Eslen Delanogare</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-08-tessmann.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Tiago Tessmann</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-09-luana.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Luana Carolina</p>
+                        </div>
+
+                        <div
+                            class="swiper-slide bg-[url('assets/img/professor-10-hyeser.jpg')] h-[500px] bg-cover rounded-3xl">
+                            <p class="flex justify-center mt-[450px]">Hyser</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            </div>
+        </section>
+
+        <section id="questions">
+            <p
+                class="text-center text-4xl font-bold bg-gradient-to-r from-primary-3 to-primary-1 bg-clip-text text-transparent pb-2">
+                Perguntas frequentes
+            </p>
+        </section>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 15,
+            grabCursor: true,
+            freeMode: true,
+            autoplay: true,
+            delay: 1000,
+            loop: true
+        });
+    </script>
 </body>
+
 </html>
